@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B004F9C32B4D364800F22C47 /* PasswordDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B004F9C22B4D364800F22C47 /* PasswordDetails.swift */; };
 		B067740A2B45BA190085DF67 /* PasswordListAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06774092B45BA190085DF67 /* PasswordListAppApp.swift */; };
 		B067740C2B45BA190085DF67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B067740B2B45BA190085DF67 /* ContentView.swift */; };
 		B067740E2B45BA1B0085DF67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B067740D2B45BA1B0085DF67 /* Assets.xcassets */; };
 		B06774122B45BA1B0085DF67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B06774112B45BA1B0085DF67 /* Preview Assets.xcassets */; };
+		B067741B2B45BA9F0085DF67 /* PasswordModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B06774192B45BA9F0085DF67 /* PasswordModel.xcdatamodeld */; };
+		B067741D2B45BC960085DF67 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B067741C2B45BC960085DF67 /* DataController.swift */; };
+		B06774212B45E4F50085DF67 /* AddPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06774202B45E4F50085DF67 /* AddPasswordView.swift */; };
+		B06774232B45FFED0085DF67 /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06774222B45FFED0085DF67 /* TimeFormatting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B004F9C22B4D364800F22C47 /* PasswordDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordDetails.swift; sourceTree = "<group>"; };
 		B06774062B45BA190085DF67 /* PasswordListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06774092B45BA190085DF67 /* PasswordListAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordListAppApp.swift; sourceTree = "<group>"; };
 		B067740B2B45BA190085DF67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B067740D2B45BA1B0085DF67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B067740F2B45BA1B0085DF67 /* PasswordListApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PasswordListApp.entitlements; sourceTree = "<group>"; };
 		B06774112B45BA1B0085DF67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B067741A2B45BA9F0085DF67 /* PasswordModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PasswordModel.xcdatamodel; sourceTree = "<group>"; };
+		B067741C2B45BC960085DF67 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B06774202B45E4F50085DF67 /* AddPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordView.swift; sourceTree = "<group>"; };
+		B06774222B45FFED0085DF67 /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				B06774092B45BA190085DF67 /* PasswordListAppApp.swift */,
-				B067740B2B45BA190085DF67 /* ContentView.swift */,
+				B067741F2B45E4950085DF67 /* Helpers */,
+				B067741E2B45E4380085DF67 /* views */,
+				B06774182B45BA570085DF67 /* DataModel */,
 				B067740D2B45BA1B0085DF67 /* Assets.xcassets */,
 				B067740F2B45BA1B0085DF67 /* PasswordListApp.entitlements */,
 				B06774102B45BA1B0085DF67 /* Preview Content */,
@@ -67,6 +79,33 @@
 				B06774112B45BA1B0085DF67 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B06774182B45BA570085DF67 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				B06774192B45BA9F0085DF67 /* PasswordModel.xcdatamodeld */,
+				B067741C2B45BC960085DF67 /* DataController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		B067741E2B45E4380085DF67 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B067740B2B45BA190085DF67 /* ContentView.swift */,
+				B06774202B45E4F50085DF67 /* AddPasswordView.swift */,
+				B004F9C22B4D364800F22C47 /* PasswordDetails.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		B067741F2B45E4950085DF67 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B06774222B45FFED0085DF67 /* TimeFormatting.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06774212B45E4F50085DF67 /* AddPasswordView.swift in Sources */,
 				B067740C2B45BA190085DF67 /* ContentView.swift in Sources */,
+				B004F9C32B4D364800F22C47 /* PasswordDetails.swift in Sources */,
+				B067741D2B45BC960085DF67 /* DataController.swift in Sources */,
+				B067741B2B45BA9F0085DF67 /* PasswordModel.xcdatamodeld in Sources */,
 				B067740A2B45BA190085DF67 /* PasswordListAppApp.swift in Sources */,
+				B06774232B45FFED0085DF67 /* TimeFormatting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PasswordListApp/Preview Content\"";
+				DEVELOPMENT_TEAM = P7B6LPTG67;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -306,6 +351,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PasswordListApp/Preview Content\"";
+				DEVELOPMENT_TEAM = P7B6LPTG67;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -355,6 +401,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B06774192B45BA9F0085DF67 /* PasswordModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B067741A2B45BA9F0085DF67 /* PasswordModel.xcdatamodel */,
+			);
+			currentVersion = B067741A2B45BA9F0085DF67 /* PasswordModel.xcdatamodel */;
+			path = PasswordModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B06773FE2B45BA190085DF67 /* Project object */;
 }
